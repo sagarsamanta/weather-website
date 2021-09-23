@@ -25,14 +25,14 @@ app.get('',(req,res)=>{
     // res.locals.title='Index page now' // local for each individual render page
     res.render('index',{
         title:'Weather page',
-        name:'Weather page with sagar samanta'
+        name:'sagar samanta'
     })
 })
 app.get('/about',(req,res)=>{
     // res.locals.title='About page now'
     res.render('about',{
         title:'about page',
-        name:'About page with sagar samanta'
+        name:'sagar samanta'
     })       
 })
 app.get('/weather',(req,res)=>{
@@ -82,7 +82,7 @@ app.get('/products',(req,res)=>{
 app.get('/help',(req,res)=>{
     res.render('help',{
         title:'Help page',
-        name:'help page with sagar samanta'
+        name:' sagar samanta'
     })
 })
 app.get('/help/*',(req,res)=>{
