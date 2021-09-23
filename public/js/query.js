@@ -11,7 +11,8 @@ form.addEventListener('submit',(e)=>{
     messageBoxOne.textContent='Loading...',
     messageBoxTwo.textContent='';
     // console.log(searchInput.value)
-    fetch('http://localhost:3000/weather?address='+searchInput.value)
+    // fetch('http://localhost:3000/weather?address='+searchInput.value) // heruko site not need localhost
+    fetch('/weather?address='+searchInput.value)
     .then((response)=>{
              response.json().then((data)=>{
                 if(data.error){

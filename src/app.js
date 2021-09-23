@@ -19,6 +19,8 @@ app.set('view engine','hbs')
 app.set('views',viewsPath)
 hbs.registerPartials(partialPath)
 
+const port=process.env.PORT || 3000;
+
 app.get('',(req,res)=>{
     // res.locals.title='Index page now' // local for each individual render page
     res.render('index',{
@@ -99,6 +101,6 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
-    console.log('server listining at port 3000..')
+app.listen(port,()=>{
+    console.log('server listining at port '+port)
 })
